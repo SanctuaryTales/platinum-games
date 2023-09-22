@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   
+    
+</head>
+<body id="sign-up-page">
+    <img src="images/Registration.png" alt="Image of Money and Dice" id="registration-img">
+    <img src="images/Platinum-Logo.png" alt="Platinum Gaming Logo" id="logo-img-signup">
+    <h1 style="margin-bottom: 20px;" >Registration</h1>
+  
+    <form action="process_registration.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="date_of_birth" placeholder="MM-DD-YYYY" required><br>
+
+        <label for="gaming-platform">Choose Gaming Platform:</label>
+            <select id="gaming-platform" name="gaming_platform">
+                <option value="SpinRiver">SpinRiver</option>
+                <option value="SweepsGoldenDragon">SweepsGoldenDragon</option>
+                <option value="Fortune2Go">Fortune2Go</option>
+                <option value="OrionStars">OrionStars</option>
+                <option value="XGameSweeps">XGameSweeps</option>
+                <option value="GrandXSweeps">GrandXSweeps</option>
+                <option value="Juwa">Juwa</option>
+                <option value="UltraMonster">UltraMonster</option>
+            </select><br>
+    
+
+        <input class="cta-button-sign-up-button" type="submit" value="Sign Up">
+    </form>
+   
+    
+</body>
+</html>
+
