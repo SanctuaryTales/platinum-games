@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Gaming Platform: $gamingPlatform\n";
 
     // Send the email
-    $headers = "From: $email";
+    $headers = "From: teach.ryan@gmail.com";
 
     if (mail($to, $subject, $message, $headers)) {
         // Email sent successfully
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Email not sent
         echo '<h2>Registration Failed</h2>';
-        echo '<p>There was an issue processing your registration. Please try again later.</p>';
+        echo '<p>There was an issue processing your registration. Please try again. Be sure to confirm your information is correct.</p>';
     }
 
     // Additional manual steps:
