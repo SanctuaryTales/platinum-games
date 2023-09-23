@@ -21,7 +21,7 @@ header {
 }
 
 /* Style the text elements in the header */
-.header-content h1 {
+.header-content-h1 {
     font-size: 2.5em;
    
 
@@ -45,43 +45,22 @@ header {
     position: absolute;
     top: 0.625em; /* Adjust the top position as needed */
     right: 0.625em; /* Adjust the right position as needed */
-    width: 9.375em; /* Set the width of the logo */
+    width: 150%; /* Set the width of the logo */
     height: auto; 
     z-index: 1; 
 }
-
 #logo-img-signup {
-    position:absolute;
+    position: absolute;
     top: 1.25em; /* Adjust the top position as needed */
     left: 1.25em; /* Adjust the left position as needed */
-    width: 0.0625em; /* Set the width of the logo */
-    height: auto; 
-    z-index: 1; 
+    width: 25vh; /* Set the width to 'auto' to maintain the original image size */
+    height: auto; /* Set the height to 'auto' to maintain the original image size */
+    z-index: 1;
 }
 
 
-/* Navigation menu styles 
-nav {
-    text-align: right;
-    padding: .625em;
-    margin-top: 2.5em;
-}
 
-nav ul {
-    list-style-type: none;
-}
 
-nav ul li {
-    display: inline;
-    margin-right: 1.25em;
-}
-
-nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-*/
 /* Call-to-Action Button Styles */
 .cta-button-sign-up-button,
 .cta-button-explore-games-button {
@@ -92,7 +71,7 @@ nav ul li a {
     font-weight: bold;
     border-radius: .3125em;
     margin-top: 1.25em;
-    margin-bottom: 0;
+    margin-bottom: 2.25em;
     margin-right: 1.875em;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -130,14 +109,15 @@ nav ul li a {
 
 #casino-games {
     text-align: justify;
-    padding: 2.5em;
-    margin-top: 9.375em;
+    padding: 1.5em; /* Adjust the padding to reduce space */
+    margin-top: 5em; /* Adjust the top margin as needed */
     background-color: #E3E3E3;
     color: black;
 }
 
+
 #casino-games-h2 {
-    font: size 2.25em;;
+    font-size: 2.15em;
     margin-bottom: .625em;
     text-align: justify;
 }
@@ -176,17 +156,23 @@ nav ul li a {
 /* Adjustments for game thumbnails */
 .game-thumbnail {
     text-align: center;
-   
-     /* Background color for game thumbnails */
-    border-radius: 0.3125em; /* Converted from 5px to em */
-    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
+    /*Backgroundcolorforgamethumbnails*/border-radius: 0.3125em;
+    /*Convertedfrom5pxtoem*/box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 0.3125em;
+    -moz-border-radius: 0.3125em;
+    -ms-border-radius: 0.3125em;
+    -o-border-radius: 0.3125em;
 }
 
 .game-thumbnail img {
     max-width: 100%;
-  
-    height: auto;
+    border-radius: 5%;
+    height: 50vh;
     margin-top: 6.25em;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 
 .game-thumbnail h3 {
@@ -245,13 +231,8 @@ nav ul li a {
     margin-top: 0;
 }
 
-/* Footer styles */
-footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1.25em;
-}
+
+
 
 #sign-up-page {
     text-align: justify;
@@ -274,7 +255,37 @@ footer {
     -o-border-radius: 0.3125em; 
 }
 
-/* Your existing CSS code */
+hr {
+    border: none;
+    border-top: 1px solid #d1d2d2; /* Customize the line color and style */
+    margin: 0 0; /* Adjust the margin as needed to control spacing */
+   
+}
+
+#contact{
+    text-align: center;
+    padding: 1% 5%;
+    background-color: #000000;
+    color: #D1D2D2;
+    
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 0;
+}
+
+#logo-img-contact{
+    position: relative;
+    left: 45%; /* Adjust the left position as needed */
+    width: 15%; /* Set the width to 'auto' to maintain the original image size */
+    height: auto; /* Set the height to 'auto' to maintain the original image size */
+    z-index: 1;
+}
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
@@ -287,20 +298,17 @@ footer {
     header {
         padding: 1.5% 3%; /* Adjusted padding for smaller screens */
     }
-    .header-content {
-        padding: .625em; /* Adjust the padding as needed */
-    }
+    
 
     /* Example: Adjust the font size of the header content for smaller screens */
-    .header-content h1 {
-        font-size: 1.75em; /* Adjusted font size for smaller screens */
+    .header-content-h1 {
+        font-size: .5em; /* Adjusted font size for smaller screens */
     }
     
 
     #logo-img {
-        top: 1.25em; /* Adjusted for better spacing */
-        right: 1.25em; /* Adjusted for better spacing */
-        max-width: 15%; /* Adjust the maximum width as needed */
+        display: none;
+       
     }
     .game-grid {
         display: grid;
@@ -315,6 +323,14 @@ footer {
         top: 0;
         left: 0;
         z-index: -1;
+    }
+
+    #logo-img-contact{
+        position: relative;
+        left: 35%; /* Adjust the left position as needed */
+        width: 20vh; /* Set the width to 'auto' to maintain the original image size */
+        height: auto; /* Set the height to 'auto' to maintain the original image size */
+        z-index: 1;
     }
     /* Apply these styles to screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
@@ -355,6 +371,15 @@ footer {
         max-width: 50%;
         margin: 0 auto; /* Center-align the form */
     }
+
+    #registration-img{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 }
 
 
@@ -369,13 +394,15 @@ footer {
     header {
         padding: 2% 4%; /* Adjusted padding for tablets */
     }
+    
 
     /* Example: Adjust the font size of the header content for tablets */
-    .header-content h1 {
+    .header-content-h1 {
         font-size: 2.25em; /* Adjusted font size for tablets */
     }
     #logo-img {
         top: 1.25em; /* Adjusted for better spacing */
+        bottom: 1.25em;
         right: 1.25em; /* Adjusted for better spacing */
         max-width: 15%; /* Adjust the maximum width as needed */
     }
