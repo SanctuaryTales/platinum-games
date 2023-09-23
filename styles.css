@@ -41,19 +41,30 @@ header {
     z-index: -1;
 }
 
+/* Style for the logo container */
+#logo-container {
+    display: flex; /* Use flexbox for positioning */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    padding: 5% 5%;
+}
+
+/* Style for the logo image */
 #logo-img {
     position: absolute;
-    top: 0.625em; /* Adjust the top position as needed */
-    right: 0.625em; /* Adjust the right position as needed */
-    width: 150%; /* Set the width of the logo */
-    height: auto; 
-    z-index: 1; 
+    top: .625em;
+    right: .625em;
+    max-width: 20%; /* Ensure the logo doesn't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the logo is above the background image */
 }
+
+
 #logo-img-signup {
     position: absolute;
     top: 1.25em; /* Adjust the top position as needed */
     left: 1.25em; /* Adjust the left position as needed */
-    width: 25vh; /* Set the width to 'auto' to maintain the original image size */
+    width: 20%; /* Set the width to 'auto' to maintain the original image size */
     height: auto; /* Set the height to 'auto' to maintain the original image size */
     z-index: 1;
 }
@@ -194,7 +205,8 @@ header {
     border-radius: 0.3125em; 
     display: inline-block;
     transition: background-color 0.3s ease;
-    margin-top: 0.625em;
+    margin-top: 5%;
+    margin-bottom: 20%;
 }
 
 /* Game thumbnail image hover effect */
@@ -286,19 +298,6 @@ footer {
     height: auto; /* Set the height to 'auto' to maintain the original image size */
     z-index: 1;
 }
-/* Media query for screens with a maximum width of 360px (typical for mobile devices) */
-
- @media (max-width: 360px) {
-        /* Adjust the overall padding for better spacing on smaller screens */
-        body#sign-up-page {
-            padding: 2% 5%;
-        }
-
-        #logo-img-signup {
-            max-width: 20%;
-        }
-
-    }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
@@ -345,6 +344,18 @@ footer {
         height: auto; /* Set the height to 'auto' to maintain the original image size */
         z-index: 1;
     }
+    @media (max-width: 360px) {
+        /* Adjust the overall padding for better spacing on smaller screens */
+        body#sign-up-page {
+            padding: 2% 5%;
+        }
+
+        #logo-img-signup {
+            max-width: 20%;
+        }
+
+    }
+  
     /* Apply these styles to screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
     /* Adjust the overall padding for better spacing on smaller screens */
@@ -417,7 +428,7 @@ footer {
         top: 1.25em; /* Adjusted for better spacing */
         bottom: 1.25em;
         right: 1.25em; /* Adjusted for better spacing */
-        max-width: 15%; /* Adjust the maximum width as needed */
+        max-width: 20%; /* Adjust the maximum width as needed */
     }
     
 }
