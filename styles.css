@@ -286,6 +286,19 @@ footer {
     height: auto; /* Set the height to 'auto' to maintain the original image size */
     z-index: 1;
 }
+/* Media query for screens with a maximum width of 360px (typical for mobile devices) */
+
+ @media (max-width: 360px) {
+        /* Adjust the overall padding for better spacing on smaller screens */
+        body#sign-up-page {
+            padding: 2% 5%;
+        }
+
+        #logo-img-signup {
+            max-width: 20%;
+        }
+
+    }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
