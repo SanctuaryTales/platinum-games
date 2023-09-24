@@ -4,7 +4,7 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 h1{
-    margin-top:2.5em;
+    margin-top:40px;
 }
 
 /* Set a background color and font family for the entire page */
@@ -52,9 +52,6 @@ header {
 /* Style for the logo image */
 #logo-img {
     position: absolute;
-    top: .625em;
-    right: .625em;
-    max-width: 20%; /* Ensure the logo doesn't exceed the container's width */
     height: auto; /* Maintain aspect ratio */
     z-index: 1; /* Ensure the logo is above the background image */
 }
@@ -80,7 +77,7 @@ header {
     text-decoration: none;
     padding: .625em 1.25em;
     font-weight: bold;
-    border-radius: .3125em;
+    border-radius: 5%;
     margin-top: 1.25em;
     margin-bottom: 2.25em;
     margin-right: 1.875em;
@@ -90,10 +87,10 @@ header {
     -moz-transition: background-color 0.3s ease;
     -ms-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
-    -webkit-border-radius: .3125em;
-    -moz-border-radius: .3125em;
-    -ms-border-radius: .3125em;
-    -o-border-radius: .3125em;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 
 .cta-button-sign-up-button:hover,
@@ -105,44 +102,44 @@ header {
 #promo {
     text-align: center;
     color: #FFFFFF;
-    margin-top: 9.375em;
-    margin-bottom: 9.375em;
+   
 }
 
 .promo-h2 {
     font-size: 2.5em;
-    margin-bottom: .625em;
+    margin-bottom: 3%;
+    margin-top: 5%;
 }
 /* Games section styles */
 
 
 
 
-#casino-games {
+#about-us {
     text-align: justify;
-    padding: 1.5em; /* Adjust the padding to reduce space */
-    margin-top: 5em; /* Adjust the top margin as needed */
+    padding: 2%; /* Adjust the padding to reduce space */
+    margin-top: 5%; /* Adjust the top margin as needed */
     background-color: #E3E3E3;
     color: black;
 }
 
 
-#casino-games-h2 {
+#about-us-h2 {
     font-size: 2.15em;
-    margin-bottom: .625em;
+    margin-bottom: 3%;
     text-align: justify;
 }
 
-#casino-games-h3 {
+#about-us-h3 {
     font-size: 1.5em;
-    margin-bottom: 1.25em;
+    margin-bottom: 5%;
     text-align: justify;
 }
 .about-us-p {
     max-width: 56.25em;
     text-align: justify;
-    padding: .625em;
-    margin-top: .3125em;
+    padding: .5%;
+    margin-top: 1%;
     background-color: #E3E3E3;
     color: black;
     font-size: 1.125em;
@@ -150,7 +147,7 @@ header {
 }
 #games {
     text-align: center;
-    padding: 2.5em;
+    padding: 10%;
     margin-top: 0;
     background-color: black;
 }
@@ -158,7 +155,7 @@ header {
 .game-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-    gap: 1.875em; /* Adjust the gap between games */
+    gap: 15px; /* Adjust the gap between games */
     margin-top: 5px; /* Adjust the top margin as needed */
 }
 
@@ -169,17 +166,18 @@ header {
     text-align: center;
     /*Backgroundcolorforgamethumbnails*/border-radius: 0.3125em;
     /*Convertedfrom5pxtoem*/box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 0.3125em;
-    -moz-border-radius: 0.3125em;
-    -ms-border-radius: 0.3125em;
-    -o-border-radius: 0.3125em;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
 }
 
 .game-thumbnail img {
     max-width: 100%;
     border-radius: 5%;
     height: 60%;
-    margin-top: 6.25em;
+    margin-top: 25%;
+   
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
     -ms-border-radius: 5%;
@@ -193,20 +191,24 @@ header {
 
 .game-thumbnail p {
     font-size: 1em; 
-    margin-top: 0.625em;
+    margin-top: 2%;
 }
 
 .game-thumbnail a {
     background-color: #CD181E;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 0.625em 1.25em; 
+    padding: 10px 20px;
     font-weight: bold;
-    border-radius: 0.3125em; 
+    border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
     margin-top: 5%;
     margin-bottom: 20%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 /* Game thumbnail image hover effect */
@@ -256,15 +258,15 @@ header {
 
 #name, #email, #dob, #gaming-platform {
     text-align: justify;
-    padding: 0.3125em; 
-    margin: 3.125em; 
+    padding: .5%;
+    margin: 10%;
     background-color: #FFFFFF;
     color: black;
-    border-radius: 0.3125em; 
-    -webkit-border-radius: 0.3125em; 
-    -moz-border-radius: 0.3125em; 
-    -ms-border-radius: 0.3125em; 
-    -o-border-radius: 0.3125em; 
+    border-radius: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 hr {
@@ -275,7 +277,7 @@ hr {
 }
 
 #contact{
-    text-align: center;
+    text-align: left;
     padding: 1% 5%;
     background-color: #000000;
     color: #D1D2D2;
@@ -293,10 +295,25 @@ footer {
 
 #logo-img-contact{
     position: relative;
-    left: 45%; /* Adjust the left position as needed */
-    width: 15%; /* Set the width to 'auto' to maintain the original image size */
+    left: 90%; /* Adjust the left position as needed */
+    width: 12%; /* Set the width to 'auto' to maintain the original image size */
     height: auto; /* Set the height to 'auto' to maintain the original image size */
     z-index: 1;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 360px) {
+    /* Adjust the overall padding for better spacing on smaller screens */
+    body#sign-up-page {
+        padding: 2% 5%;
+    }
+
+    #logo-img-signup {
+        max-width: 10%;
+    }
+
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
@@ -344,18 +361,7 @@ footer {
         height: auto; /* Set the height to 'auto' to maintain the original image size */
         z-index: 1;
     }
-    @media (max-width: 360px) {
-        /* Adjust the overall padding for better spacing on smaller screens */
-        body#sign-up-page {
-            padding: 2% 5%;
-        }
-
-        #logo-img-signup {
-            max-width: 20%;
-        }
-
-    }
-  
+   
     /* Apply these styles to screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
     /* Adjust the overall padding for better spacing on smaller screens */
@@ -387,7 +393,7 @@ footer {
 
     /* Increase the size of the logo for better visibility on larger screens */
     #logo-img-signup {
-        max-width: 20%;
+        max-width: 15%;
     }
 
     /* Increase the width of the form for better readability on larger screens */
@@ -428,7 +434,7 @@ footer {
         top: 1.25em; /* Adjusted for better spacing */
         bottom: 1.25em;
         right: 1.25em; /* Adjusted for better spacing */
-        max-width: 20%; /* Adjust the maximum width as needed */
+        max-width: 10%; /* Adjust the maximum width as needed */
     }
     
 }
