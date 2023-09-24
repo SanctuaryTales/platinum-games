@@ -1,11 +1,13 @@
 /* Reset some default styles for better consistency */
-body, h1, h2, h3, p, ul, li {
+body, h1,h3,h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
 h1{
     margin-top:40px;
 }
+
+
 
 /* Set a background color and font family for the entire page */
 body {
@@ -128,6 +130,7 @@ header {
     font-size: 2.15em;
     margin-bottom: 3%;
     text-align: justify;
+    
 }
 
 #about-us-h3 {
@@ -150,6 +153,12 @@ header {
     padding: 10%;
     margin-top: 0;
     background-color: black;
+}
+
+#games h2 {
+    color: #FFFFFF;
+    font-size: 2.5em; 
+    margin-top: 0;
 }
 
 .game-grid {
@@ -431,9 +440,9 @@ footer {
         font-size: 2.25em; /* Adjusted font size for tablets */
     }
     #logo-img {
-        top: 1.25em; /* Adjusted for better spacing */
-        bottom: 1.25em;
-        right: 1.25em; /* Adjusted for better spacing */
+        top: 10px; /* Adjusted for better spacing */
+        bottom: 10px;
+        right: 10px; /* Adjusted for better spacing */
         max-width: 10%; /* Adjust the maximum width as needed */
     }
     
@@ -459,8 +468,9 @@ footer {
         /* Adjusted font size for desktops */
     }
     #logo-img {
-        top: 1.25em; /* Adjusted for better spacing */
-        right: 1.25em; /* Adjusted for better spacing */
+        top: 12px; /* Adjusted for better spacing */
+        right: 12px; 
+        bottom: 12px;/* Adjusted for better spacing */
         max-width: 15%; /* Adjust the maximum width as needed */
     }
 
