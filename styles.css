@@ -59,9 +59,9 @@ header {
 
 #logo-img-signup {
     position: absolute;
-    top: 1.25em; /* Adjust the top position as needed */
-    left: 1.25em; /* Adjust the left position as needed */
-    width: 20%; /* Set the width to 'auto' to maintain the original image size */
+    top: 5%; /* Adjust the top position as needed */
+    left: 5%; /* Adjust the left position as needed */
+    width: 15%; /* Set the width to 'auto' to maintain the original image size */
     height: auto; /* Set the height to 'auto' to maintain the original image size */
     z-index: 1;
 }
@@ -136,7 +136,7 @@ header {
     text-align: justify;
 }
 .about-us-p {
-    max-width: 56.25em;
+    max-width: 75%;
     text-align: justify;
     padding: .5%;
     margin-top: 1%;
