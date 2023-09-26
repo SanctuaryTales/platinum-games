@@ -53,6 +53,7 @@ header {
 
 /* Style for the logo image */
 #logo-img {
+    max-width: 95px;
     position: absolute;
     height: auto; /* Maintain aspect ratio */
     z-index: 1; /* Ensure the logo is above the background image */
@@ -328,6 +329,7 @@ hr {
 }
 
 
+
 /* Footer styles */
 footer {
     background-color: #000000;
@@ -399,11 +401,11 @@ footer {
     }
 
     #logo-img-contact{
-        display:none;
+       display:none;
     }
    
     
-    
+    /* Adjust the overall padding for better spacing on smaller screens */
     body#sign-up-page {
         padding: 2% 5%;
     }
@@ -473,12 +475,13 @@ footer {
         top: 1.25em; /* Adjusted for better spacing */
         bottom: 1.25em;
         right: 1.25em; /* Adjusted for better spacing */
-        max-width: 10%; /* Adjust the maximum width as needed */
+        max-width: 50px; /* Adjust the maximum width as needed */
+    }
+    #logo-img-contact{
+      display: none
     }
     
 }
-
-
     /* Add more responsive adjustments for tablets */
 
 
@@ -500,7 +503,7 @@ footer {
     #logo-img {
         top: 1.25em; /* Adjusted for better spacing */
         right: 1.25em; /* Adjusted for better spacing */
-        max-width: 15%; /* Adjust the maximum width as needed */
+        max-width: 95px; /* Adjust the maximum width as needed */
     }
 
     
