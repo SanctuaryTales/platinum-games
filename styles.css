@@ -1,7 +1,10 @@
 /* Reset some default styles for better consistency */
-body, h1,h3,h2, p, ul, li {
+
+
+body, h1,h3, p, ul, li {
     margin: 0;
     padding: 0;
+    font-family: 'PT Serif', serif;
 }
 h1{
     margin-top:40px;
@@ -10,9 +13,6 @@ h1{
 
 
 /* Set a background color and font family for the entire page */
-body {
-    font-family: Arial, sans-serif;
-}
 
 /* Header styles */
 header {
@@ -74,11 +74,13 @@ header {
 /* Call-to-Action Button Styles */
 .cta-button-sign-up-button,
 .cta-button-explore-games-button {
-    background-color: #D1D2D2;
-    color: #000000;
+    background-color:#CD181E;
+    color: #FFFFFF;
     text-decoration: none;
     padding: .625em 1.25em;
     font-weight: bold;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
     border-radius: 5%;
     margin-top: 1.25em;
     margin-bottom: 2.25em;
@@ -97,7 +99,9 @@ header {
 
 .cta-button-sign-up-button:hover,
 .cta-button-explore-games-button:hover {
-    background-color: #9aa1a1;
+    background-color: #FF3742;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+    
 }
 
 /* Promo section styles */
@@ -113,9 +117,6 @@ header {
     margin-top: 5%;
 }
 /* Games section styles */
-
-
-
 
 #about-us {
     text-align: justify;
@@ -226,11 +227,8 @@ header {
     transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
 }
 
-
-
-
 .game-thumbnail a:hover {
-    background-color: #050a30;
+    background-color: #FF3742;
 }
 
 /* Sign-up section styles */
@@ -253,8 +251,6 @@ header {
     font-size: 1.125em; 
     margin-top: 0;
 }
-
-
 
 
 #sign-up-page {
@@ -284,14 +280,53 @@ hr {
     margin: 0 0; /* Adjust the margin as needed to control spacing */
    
 }
-
-#contact{
-    text-align: left;
-    padding: 1% 5%;
+/* Style the form label */
+/* Style for the contact section */
+#contact {
+    text-align: center;
+    padding: 5% 0; /* Adjust padding as needed */
     background-color: #000000;
     color: #D1D2D2;
-    
 }
+
+/* Style for the contact container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Wrap elements on smaller screens */
+}
+
+/* Style for the logo in the contact section */
+
+
+/* Style for the contact info */
+.contact-info {
+    text-align: left; /* Align contact info to the left */
+    max-width: 600px; /* Adjust width as needed */
+}
+
+/* Style for contact headings and details */
+.contact-info h1 {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.contact-info h2 {
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.contact-details h3 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-top: 15px; /* Adjust spacing as needed */
+}
+
+.contact-details p {
+    font-size: 1em; /* Adjust font size as needed */
+    margin-top: 5px; /* Adjust spacing as needed */
+}
+
 
 /* Footer styles */
 footer {
@@ -304,7 +339,7 @@ footer {
 
 #logo-img-contact{
     position: relative;
-    left: 90%; /* Adjust the left position as needed */
+    right: 20%; /* Adjust the left position as needed */
     width: 12%; /* Set the width to 'auto' to maintain the original image size */
     height: auto; /* Set the height to 'auto' to maintain the original image size */
     z-index: 1;
@@ -440,9 +475,9 @@ footer {
         font-size: 2.25em; /* Adjusted font size for tablets */
     }
     #logo-img {
-        top: 10px; /* Adjusted for better spacing */
-        bottom: 10px;
-        right: 10px; /* Adjusted for better spacing */
+        top: 1.25em; /* Adjusted for better spacing */
+        bottom: 1.25em;
+        right: 1.25em; /* Adjusted for better spacing */
         max-width: 10%; /* Adjust the maximum width as needed */
     }
     
@@ -468,9 +503,8 @@ footer {
         /* Adjusted font size for desktops */
     }
     #logo-img {
-        top: 12px; /* Adjusted for better spacing */
-        right: 12px; 
-        bottom: 12px;/* Adjusted for better spacing */
+        top: 1.25em; /* Adjusted for better spacing */
+        right: 1.25em; /* Adjusted for better spacing */
         max-width: 15%; /* Adjust the maximum width as needed */
     }
 
