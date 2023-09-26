@@ -399,16 +399,11 @@ footer {
     }
 
     #logo-img-contact{
-        position: relative;
-        left: 35%; /* Adjust the left position as needed */
-        width: 20vh; /* Set the width to 'auto' to maintain the original image size */
-        height: auto; /* Set the height to 'auto' to maintain the original image size */
-        z-index: 1;
+        display:none;
     }
    
-    /* Apply these styles to screens with a maximum width of 768px (typical for mobile devices) */
-@media (max-width: 768px) {
-    /* Adjust the overall padding for better spacing on smaller screens */
+    
+    
     body#sign-up-page {
         padding: 2% 5%;
     }
